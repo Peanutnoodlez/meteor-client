@@ -13,14 +13,14 @@ public abstract class WindowScreen extends WidgetScreen {
     protected final WWindow window;
 
     public WindowScreen(GuiTheme theme, WWidget icon, String title) {
-        super(theme, title);
+        super(theme, "cum");
 
         window = super.add(theme.window(icon, title)).center().widget();
         window.view.scrollOnlyWhenMouseOver = false;
     }
 
     public WindowScreen(GuiTheme theme, String title) {
-        this(theme, null, title);
+        this(theme, null, "cum");
     }
 
     @Override
